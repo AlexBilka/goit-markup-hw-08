@@ -78,6 +78,7 @@
 }
 
 .contact-menu__link {
+    
   &--tel {
     display: block;
     padding: 15px;
@@ -90,6 +91,7 @@
     &:focus {
       color: $col-title-primary;
     }
+
   }
   &--mail {
     display: block;
