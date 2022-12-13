@@ -4,9 +4,13 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: $col-text-primary;
+  
 }
 .section {
-  padding-bottom: 94px;
+  padding-bottom: 60px;
+  @media screen and (min-width:1200px) {
+        padding-bottom: 94px;
+      }
 }
 .container {
   max-width: 100%;
@@ -18,5 +22,8 @@ body {
   }
   @media screen and (min-width:768px) {
     max-width: 768px;
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 1200px;
   }
 }

@@ -42,7 +42,12 @@ body {
 }
 
 .section {
-  padding-bottom: 94px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-bottom: 94px;
+  }
 }
 
 .container {
@@ -59,6 +64,11 @@ body {
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
   }
 }
 
@@ -199,8 +209,14 @@ body {
   margin-bottom: 30px;
   text-align: center;
   color: #212121;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.16;
+}
+@media screen and (min-width: 1200px) {
+  .section-title {
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
 }
 
 .header__container {
@@ -282,8 +298,8 @@ body {
 }
 
 .footer-wrap {
-  display: flex;
-  align-items: baseline;
+  /* display: flex;
+  align-items: baseline;*/
 }
 
 .address-list__item {
@@ -516,43 +532,72 @@ body {
 }
 
 .hero {
+  display: flex;
+  align-items: center;
   max-width: 1600px;
-  height: 600px;
+  height: 400px;
   margin-left: auto;
   margin-right: auto;
-  padding: 200px 0;
   text-align: center;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg.jpg);
   background-color: #2f303a;
 }
+@media screen and (min-width: 1200px) {
+  .hero {
+    height: 600px;
+  }
+}
 .hero__wrap {
-  max-width: 696px;
+  max-width: 360px;
   margin: 0 auto;
+}
+@media screen and (min-width: 1200px) {
+  .hero__wrap {
+    max-width: 696px;
+  }
 }
 .hero__title {
   margin-bottom: 30px;
   color: #ffffff;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 23px;
+  line-height: 1.6;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    font-size: 44px;
+    line-height: 1.36;
+  }
+}
 
 .features {
-  padding-top: 94px;
+  padding-top: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .features {
+    padding-top: 94px;
+  }
 }
 
-.icon-list {
+.features-list {
   display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
 }
-.icon-list__item {
-  width: 270px;
+@media screen and (min-width: 768px) {
+  .features-list__item {
+    width: calc((100% - 30px) / 2);
+  }
 }
-.icon-list__item + .icon-list__item {
-  margin-left: 30px;
+@media screen and (min-width: 1200px) {
+  .features-list__item {
+    width: calc((100% - 90px) / 4);
+  }
 }
-.icon-list__card {
+.features-list__card {
   height: 120px;
   display: flex;
   justify-content: center;
@@ -561,12 +606,18 @@ body {
   border-radius: 4px;
   background-color: #f5f4fa;
 }
-.icon-list__subtitle {
+.features-list__subtitle {
   margin-bottom: 10px;
   color: #212121;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+}
+
+@media screen and (max-width: 1200px) {
+  .business {
+    display: none;
+  }
 }
 
 .picture-list {
@@ -597,7 +648,12 @@ body {
 
 .team {
   background-color: #f5f4fa;
-  padding-top: 94px;
+  padding-top: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .team {
+    padding-top: 94px;
+  }
 }
 
 .card-list {
@@ -617,10 +673,20 @@ body {
     width: calc((100% - 30px) / 2);
   }
 }
+@media screen and (min-width: 1200px) {
+  .card-list__item {
+    width: calc((100% - 90px) / 4);
+  }
+}
 .card-list__text {
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 24px;
   text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .card-list__text {
+    padding-bottom: 30px;
+  }
 }
 .card-list__name {
   margin-bottom: 10px;
@@ -636,15 +702,38 @@ body {
 }
 
 .client {
-  padding-top: 94px;
+  padding-top: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .client {
+    padding-top: 94px;
+  }
 }
 
 .icon-list {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+@media screen and (min-width: 480px) {
+  .icon-list__item {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 768px) {
+  .icon-list__item {
+    width: calc((100% - 60px) / 3);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .icon-list__item {
+    width: calc((100% - 150px) / 6);
+  }
 }
 .icon-list__link {
-  display: block;
+  display: flex;
+  justify-content: center;
   padding: 15px 32px;
   height: 92px;
   border: 1px solid #afb1b8;

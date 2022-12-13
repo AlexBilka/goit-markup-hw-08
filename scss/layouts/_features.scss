@@ -1,15 +1,25 @@
 .features {
-  padding-top: 94px;
+  padding-top: 60px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+  }
 }
-.icon-list {
+.features-list {
   display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+
   &__item {
-    width: 270px;
+    @media screen and (min-width: 768px) {
+      width: calc((100% - 30px) / 2);
+    }
+    @media screen and (min-width: 1200px) {
+      width: calc((100% - 90px) / 4);
+    }
   }
 
-  &__item + &__item {
-    margin-left: 30px;
-  }
   &__card {
     height: 120px;
     display: flex;

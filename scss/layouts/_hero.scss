@@ -1,9 +1,10 @@
 .hero {
+  display: flex;
+  align-items: center;
   max-width: 1600px;
-  height: 600px;
+  height: 400px;
   margin-left: auto;
   margin-right: auto;
-  padding: 200px 0;
   text-align: center;
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
@@ -12,18 +13,29 @@
     url(../images/hero-bg.jpg);
   background-color: $col-bg-dark;
 
+  @media screen and (min-width: 1200px) {
+    height: 600px;
+  }
   &__wrap {
-    max-width: 696px;
+    max-width: 360px;
     margin: 0 auto;
+    @media screen and (min-width: 1200px) {
+      max-width: 696px;
+    }
   }
   &__title {
     margin-bottom: 30px;
 
     color: $col-text-secondary;
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
+    font-size: 23px;
+    line-height: 1.6;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+
+    @media screen and (min-width: 1200px) {
+      font-size: 44px;
+      line-height: 1.36;
+    }
   }
 }
