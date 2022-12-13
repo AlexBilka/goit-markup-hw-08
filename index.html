@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <!-- <header class="header">
+    <header class="header">
       <div class="container header__container">
         <a class="link logo header__logo" href="./index.html"
           ><span class="logo-accent">Web</span>Studio</a>
@@ -57,14 +57,13 @@
         </ul>
       </div>
     </header>
-  -->
     <main>
       <section class="hero">
         <div class="container hero__wrap">
-            <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
-            <button class="hero__btn btn" type="button" data-modal-open>
-              Замовити послугу
-            </button>
+          <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
+          <button class="hero__btn btn" type="button" data-modal-open>
+            Замовити послугу
+          </button>
         </div>
       </section>
       <section class="section features">
@@ -78,7 +77,8 @@
                 </svg>
               </div>
               <h3 class="features-list__subtitle">Увага до деталей</h3>
-              <p>Ідейні міркування, і навіть початок повсякденної роботи з
+              <p>
+                Ідейні міркування, і навіть початок повсякденної роботи з
                 формування позиції.
               </p>
             </li>
@@ -89,7 +89,8 @@
                 </svg>
               </div>
               <h3 class="features-list__subtitle">Пунктуальність</h3>
-              <p>Завдання організації, особливо рамки і місце навчання кадрів
+              <p>
+                Завдання організації, особливо рамки і місце навчання кадрів
                 тягне у себе.
               </p>
             </li>
@@ -100,7 +101,8 @@
                 </svg>
               </div>
               <h3 class="features-list__subtitle">Планування</h3>
-              <p>Так само косультація з широким активом значною мірою зумовлює.
+              <p>
+                Так само косультація з широким активом значною мірою зумовлює.
               </p>
             </li>
             <li class="features-list__item">
@@ -110,7 +112,8 @@
                 </svg>
               </div>
               <h3 class="features-list__subtitle">Сучасні технології</h3>
-              <p>Значимість цих проблем настільки очевидна, що реалізація
+              <p>
+                Значимість цих проблем настільки очевидна, що реалізація
                 планових завдань.
               </p>
             </li>
@@ -153,11 +156,31 @@
           <h2 class="section-title">Наша команда</h2>
           <ul class="card-list list">
             <li class="card-list__item">
-              <img
-                src="./images/igor-demyanenko.jpg"
-                alt="Усміхнений чоловік в окулярах"
-                width="270"
-                height="260" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/igor-demyanenko.jpg    1x,
+                    ./images/igor-demyanenko-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)" />
+                <source
+                  srcset="
+                    ./images/igor-demyanenko-tab.jpg    1x,
+                    ./images/igor-demyanenko-tab-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)" />
+                <source
+                  srcset="
+                    ./images/igor-demyanenko-mob.jpg    1x,
+                    ./images/igor-demyanenko-mob-2x.jpg 2x
+                  "
+                  media="(max-width: 767px)" />
+                <img
+                  src="./images/igor-demyanenko-mob.jpg"
+                  alt="Усміхнений чоловік в окулярах"
+                  width="270"
+                  height="260" />
+              </picture>
               <div class="card-list__text">
                 <h3 class="card-list__name">Ігор Дем'яненко</h3>
                 <p class="card-list__profession">Product Designer</p>
@@ -194,11 +217,31 @@
               </div>
             </li>
             <li class="card-list__item">
-              <img
-                src="./images/olga-repina.jpg"
-                alt="Дівчина в жакеті"
-                width="270"
-                height="260" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/olga-repina.jpg    1x,
+                    ./images/olga-repina-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)" />
+                <source
+                  srcset="
+                    ./images/olga-repina-tab.jpg    1x,
+                    ./images/olga-repina-tab-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)" />
+                <source
+                  srcset="
+                    ./images/olga-repina-mob.jpg    1x,
+                    ./images/olga-repina-mob-2x.jpg 2x
+                  "
+                  media="(max-width: 767px)" />
+                <img
+                  src="./images/olga-repina-mob.jpg"
+                  alt="Дівчина в жакеті"
+                  width="270"
+                  height="260" />
+              </picture>
               <div class="card-list__text">
                 <h3 class="card-list__name">Ольга Рєпіна</h3>
                 <p class="card-list__profession">Frontend Developer</p>
@@ -235,11 +278,31 @@
               </div>
             </li>
             <li class="card-list__item">
-              <img
-                src="./images/mykola-tarasov.jpg"
-                alt="Веселий молодий чоловік"
-                width="270"
-                height="260" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/mykola-tarasov.jpg    1x,
+                    ./images/mykola-tarasov-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)" />
+                <source
+                  srcset="
+                    ./images/mykola-tarasov-tab.jpg    1x,
+                    ./images/mykola-tarasov-tab-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)" />
+                <source
+                  srcset="
+                    ./images/mykola-tarasov-mob.jpg    1x,
+                    ./images/mykola-tarasov-mob-2x.jpg 2x
+                  "
+                  media="(max-width: 767px)" />
+                <img
+                  src="./images/mykola-tarasov-mob.jpg"
+                  alt="Веселий молодий чоловік"
+                  width="270"
+                  height="260" />
+              </picture>
               <div class="card-list__text">
                 <h3 class="card-list__name">Микола Тарасов</h3>
                 <p class="card-list__profession">Marketing</p>
@@ -276,11 +339,31 @@
               </div>
             </li>
             <li class="card-list__item">
-              <img
-                src="./images/myhaylo-yermakov.jpg"
-                alt="Молодий чоловік з посмішкою "
-                width="270"
-                height="260" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/myhaylo-yermakov.jpg    1x,
+                    ./images/myhaylo-yermakov-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)" />
+                <source
+                  srcset="
+                    ./images/myhaylo-yermakov-tab.jpg    1x,
+                    ./images/myhaylo-yermakov-tab-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)" />
+                <source
+                  srcset="
+                    ./images/myhaylo-yermakov-mob.jpg    1x,
+                    ./images/myhaylo-yermakov-mob-2x.jpg 2x
+                  "
+                  media="(max-width: 767px)" />
+                <img
+                  src="./images/myhaylo-yermakov-mob.jpg"
+                  alt="Молодий чоловік з посмішкою "
+                  width="270"
+                  height="260" />
+              </picture>
               <div class="card-list__text">
                 <h3 class="card-list__name">Михайло Єрмаков</h3>
                 <p class="card-list__profession">UI Designer</p>

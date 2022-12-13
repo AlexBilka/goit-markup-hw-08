@@ -12,7 +12,7 @@
 }
 
 .navi {
-  display: flex;
+  display: none;
 
   &__item {
     position: relative;
@@ -39,7 +39,7 @@
 }
 
 .contact {
-  display: flex;
+  display: none;
   margin-left: auto;
 
   &__item + .contact__item {
