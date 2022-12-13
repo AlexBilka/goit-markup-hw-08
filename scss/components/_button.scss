@@ -25,10 +25,13 @@
 }
 
 .follow__btn {
+  padding: 10px 28px;
   display: flex;
   align-items: center;
-  padding-left: 28px;
-  padding-right: 28px;
+
+  @media screen and (max-width: 767px) {
+    margin: 0 auto;
+  }
 }
 
 .modal__btn {
